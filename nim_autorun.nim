@@ -19,7 +19,7 @@ when isMainModule:
     if existsFile(fn):
       var oldTimeStamp = getFileInfo(fn).lastWriteTime
       while true:
-        sleep(2)
+        sleep(2000)
         var newTimeStamp = getFileInfo(fn).lastWriteTime
         if newTimeStamp > oldTimeStamp:
           echo("―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― ", getClockStr())
