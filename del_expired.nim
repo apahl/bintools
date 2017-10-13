@@ -26,7 +26,7 @@ when isMainModule:
     if cmp(curDate, dIn["Date"]) == 1:
       if existsFile(fn):
         removeFile(fn)
-        echo "  - File ", fn, " removed."
+        echo "  - File ", fn, " removed (expired ", dIn["Date"], ")."
       else:
         echo "  * File ", fn, " should be removed but was not found."
     else:
